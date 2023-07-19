@@ -25,7 +25,7 @@ header { position: fixed; width: 100%; height: 80px; line-height: 80px; z-index:
 .menu { display: flex; justify-content: space-between; }
 .menu a:hover { text-decoration: underline; animation: colorRotate .5s linear 0s infinite; }
 .box-wrap { display: flex; justify-content: space-between;}
-.box-wrap .txt-box { width: 70%; }
+.box-wrap .txt-box { width: 70%; padding-right: 2vw; }
 .box-wrap .img-box { width: 30%; }
 .line { position: relative; display: inline-block; z-index: 1; }
 .line:before { content:""; position: absolute; bottom: 0; left: 0; z-index: -1; display: inline-block; height: 25%; width: 0%; transition: 0.5s width; }
@@ -85,4 +85,8 @@ header { background-color: rgba(255,255,255, 0); }
     .con1 .txt-box { font-size: 8vw; }
     .line-box h3 { font-size: 25px; }
     .con1 .img-box.morph { position:static; margin-top: 5vw; width: 100%; max-height: auto; height: 100%;}
+
+    .box-wrap { flex-wrap: wrap; }    
+    .box-wrap .txt-box { width: 70%; padding-right: 2vw; }
+    .box-wrap .img-box { width: 30%; }
 }
